@@ -56,7 +56,7 @@ table {
 }
 #logo{
 	width: 114px;
-	position: left;
+	position: absolute;
 	box-sizing: border-box;
 }
 .container{
@@ -76,8 +76,8 @@ div{
 	font-size: 20px;
 }
 h1{
-	padding: 10px;
-	float: center;
+	padding: 30px;
+	float: right;
 }
 .nav li a{
   float: left;
@@ -94,4 +94,9 @@ h1{
    box-sizing: border-box;
    padding: 10px;
    display: block;
+}
+.footer{
+	width: 45%;
+	float: right;
+	padding: 5px;
 }
