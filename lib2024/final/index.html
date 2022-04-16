@@ -6,6 +6,9 @@
 	<meta name="keywords" content="HTML, CSS, JS">
 	<meta name="Author" content="Mona Mustapha"> 
     <title>Final Assignment</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a106d8ee9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div id="container" class="container">
@@ -40,8 +43,17 @@
                 	Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante egestas finibus eget a lorem, In lorem mauris, cursus sodales sapien id, tinicidunt bibendum sapien. Sed ac nunc id quam porttitor varius sodales eges nulla. Donec tempus dictum dul, sed tristique purus pulvinar quis. Aliquam ultrices temmpor pulvinar. Duis ultrices mauris sed mi vestibulum varius. Mauris moletstle us magna et maximus. Vestibulum sodales sapien nec tortor consectetur, imperdiet pulvinar lectus iacullis. Ut libero tellus, blandit vel mattis sed, consectetur id justo. Aliquam quis anse ac doior iaculis
                 </p>
             </article>
+            <div class="image-gallery">
+				<ul>
+					<li>
+						<figure>
+							<img src="img/winter.png" alt="image 1">
+						</figure>
+				    </li>
+				 </ul>
+				</div>
 
-            <section class="side-content">
+            <div class="side-content">
             	 <table>
                   <caption>SCHEDULE</caption>
                   <thead>
@@ -89,5 +101,114 @@
              </tr>
          </tbody>
          </table>
+         </div>
 
-         
+         <section class="form-value-transfer clearfix">
+         	<div class="form-elm">
+         	<h3>EDIT PROFILE</h3>
+			<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+			<p>	
+            <label>Name:</label>
+            <input type="text" name="fname">
+            </p>
+
+            <p>
+			<label>Email:</label>
+			<input type="email" required name="email" id="email">	
+			</p>
+
+			<p>
+			<label>Address</label>
+			<input type="text" id="address" placeholder="Enter address here">
+			</p>
+
+			<p>
+			<label>City</label>
+			<input type="text" id="city" placeholder="Enter city here">
+			</p>
+
+			<p>
+			<label id="province">Province:</label>
+			<select name="province" id="dropdown-container">
+				<option value="ontario">Ontario</option>
+				<option value="toronto">Toronto</option>
+                <option value="california">Montreal</option>
+                <option value="arkansas">Vancouver</option>
+            </select>	
+           </p>
+
+           <p>
+		   <label>Postal Code</label>
+		   <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+		   </p>
+             
+          <button type="submit">Submit</button>
+		  </form>
+		</div>
+		</section>
+		
+		<section>
+			<h3>PROFILE INFO</h3>
+	        <div class="card">
+	      	<ul>
+	      	<li><i class="fa-solid fa-user fa-6x"></i></li>
+	      	<li>John Doe</li>
+	      	<li>JohnDoe@algonquincollege.com</li>
+	      	<li>1385 Woodroffe Ave, Nepean, <br>
+	      	ON, K2G 1V8</li>
+	      	<li><a href="#"><i class="fa-solid fa-envelope fa-xl"></i></a></li>
+            </ul>
+         </div>
+     </section>
+     
+      <footer>
+      	<div class="link">
+      	<h5>QUICK LINKS</h5>
+      	<ul>  
+        <li><a href="#">SCHEDULE</a></li>  
+        <li><a href="#">ABOUT</a></li>  
+        <li><a href="#">PORTFOLIO</a></li>  
+        <li><a href="#">CONTACT</a></li> 	
+      </ul>
+      </div>
+          	
+      <nav class="social">
+      	<h5>FOLLOW US</h5>
+		<ul>
+			<li class="facebook">
+			<a href="https://www.facebook.com">
+			<img src="img/facebook.png" alt="facebook logo">
+			</a>
+			<li class="youtube">
+			<a href="https://www.youtube.com">
+			<img src="img/youtube.png" alt="youtube logo">
+			</a>	
+			<li class="twitter">
+			<a href="https://www.twitter.com">
+			<img src="img/twitter.png" alt="twitter logo">
+			</a>
+		</li>	
+	   </ul>
+     </nav>
+
+     <div class="ad">
+     	<h5>ADDRESS</h5>
+        <address>
+        	1385 Woodroffe Ave. <br>
+        	Nepean, ON K2G 1V8 <br>
+        	Canada
+        </address>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
